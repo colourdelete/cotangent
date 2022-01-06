@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="wasm_exec.js"></script>
+    <title>Cotangent Test</title>
+    <style>
+      #input,
+      #output {
+        width: 100%;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cotangent Test</h1>
+    <textarea id="input"> </textarea>
+    <div id="output"></div>
+    <script>
+      const go = new Go();
+      WebAssembly.instantiateStreaming(
+        fetch("cotangent.wasm"),
+        go.importObject
+      ).then((result) => {
+        go.run(result.instance);
+        const input = document.getElementById("input");
+        const output = document.getElementById("output");
+        input.addEventListener("input", async () => {
+          output.innerHTML = await cotangent(input.value);
+        });
+      });
+    </script>
+  </body>
+</html>
