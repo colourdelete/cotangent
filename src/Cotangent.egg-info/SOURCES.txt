@@ -1,0 +1,9 @@
+MANIFEST.in
+go.mod
+go.sum
+pyproject.toml
+setup.cfg
+src/Cotangent.egg-info/PKG-INFO
+src/Cotangent.egg-info/SOURCES.txt
+src/Cotangent.egg-info/dependency_links.txt
+src/Cotangent.egg-info/top_level.txt

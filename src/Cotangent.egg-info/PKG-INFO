@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Cotangent
+Version: 0.0.1
+Summary: A simple Markdown renderer and sanitizer
+Home-page: https://github.com/colourdelete/cotangent
+Author: Ken Shibata
+Author-email: kenxshibata@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/colourdelete/cotangent/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
